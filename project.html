@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
+    <style>
+        .fling-minislide {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .fling-minislide img {
+            position: absolute;
+            animation: fling-minislide 20s infinite;
+            opacity: 0;
+            width: auto;
+            height: auto;
+        }
+        
+        @keyframes fling-minislide {
+            25% {
+                opacity: 1;
+            }
+            40% {
+                opacity: 0;
+            }
+        }
+        
+        .fling-minislide img:nth-child(4) {
+            animation-delay: 0s;
+        }
+        
+        .fling-minislide img:nth-child(3) {
+            animation-delay: 5s;
+        }
+        
+        .fling-minislide img:nth-child(2) {
+            animation-delay: 10s;
+        }
+        
+        .fling-minislide img:nth-child(1) {
+            animation-delay: 15s;
+        }
+        
+        .fling-minislide img:nth-child(5) {
+            animation-delay: 20s;
+        }
+        
+        .fling-minislide img:nth-child(6) {
+            animation-delay: 25s;
+        }
+    </style>
+    <title>Missile Man</title>
+</head>
+
+<body>
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row
+				items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4
+					md:mb-0">
+                <span class="ml-3 text-xl"><b>APJ</b><strong> Abdul Kalam</strong></span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base
+					justify-center">
+                <a href="https://www.britannica.com/biography/A-P-J-Abdul-Kalam" class="mr-5 hover:text-gray-900" target="_blank">History</a>
+                <a href="https://www.ndtv.com/education/dr-apj-abdul-kalam-7-important-things-students-should-know-about-the-peoples-president-1763112" class="mr-5 hover:text-gray-900" target="_blank">Education</a>
+                <a href="https://wikibio.in/dr-apj-abdul-kalam/" class="mr-5
+						hover:text-gray-900" target="_blank">Family</a>
+                <a href="https://learnodo-newtonic.com/apj-abdul-kalam-achievements" class="mr-5 hover:text-gray-900" target="_blank">Achievements</a>
+            </nav>
+        </div>
+    </header>
+    <hr>
+
+    <section class="text-gray-700 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col
+				items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col
+					md:items-start
+					md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                    Missile Man <br class="hidden lg:inline-block" /><i><small>and</small></i>
+                    <br class="hidden lg:inline-block" />People's President
+                </h1>
+                <p class="mb-8 leading-relaxed">
+
+                    The complete name of Dr. A.P.J. Abdul Kalam is Avul Pakir Jainulabudeen Abdul Kalam. He was born on 15 October 1931 t o Jainulabudeen, a Tamil Muslim boat owner and Ashiamma, a housewife, at Rameshwaram, Tamil Nadu. His family was poor and he had to do
+                    assorted jobs to supplement family's income. He completed his schooling from the Schwartz Matriculation School at Ramanathapuram. He then went on to attend the Saint Joseph's College at Tiruchirappalli. He completed his graduation
+                    in Physics in 1954 and then moved on to Madras to study aerospace engineering.After graduating from Madras Institute of Technology (MIT-Chennai) in 1960, Kalam joined Aeronautical Development Establishment of Defence Research and Development
+                    Organisation (DRDO) as a scientist. In1969, Kalam was transferred to the Indian Space Research Organisation (ISRO) where he was the project director of lndia's first indigenous Satellite Launch Vehicle (SLV-III) which successfully
+                    deployed the Rohini satellite in near earth's orbit in July 1980. Joining ISRO was one of Kalam's biggest achievements in life. His research and educational leadership brought him great laurels and prestige in the 1980s, which prompted
+                    the government to initiate an advanced missile programme under his directorship. Kalam was the Chief Scientific Adviser to the Prime Minister, and the Secretary of Defence Research and Development Organisation from July 1992 to December
+                    1999. Kalam played a major part in developing many missiles under the mission including Agni. Kalam served as the 11th President of India from 25 July 2002 to 25 July 2007. Kalam was the third President of India to have been honoured
+                    with a Bharat Ratna, India's highest civilian honour, before becoming the President. During his term as President, he was affectionately known as the People's President.
+                </p>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-5/6 w-5/6">
+                <div class="fling-minislide">
+                    <img class="object-cover object-center rounded" src="https://www.mumbailive.com/images/media/images/images_1571123221547_abdul_kalam.jpg?bg=c39474&crop=620%2C348.0701754385965%2C0%2Cnull&fit=crop&fitToScale=w%2C1368%2C768&h=768&height=400&w=1368&width=620"
+                        alt="Slide 4" />
+                    <img class="object-cover object-center rounded" src="https://www.drishtiias.com/images/blogs/Dr.-A.P.J.-Abdul-Kalam-(Part-I).jpeg" alt="Slide 3" />
+
+                    <img class="object-cover object-center rounded" src="https://images.loksatta.com/2019/07/Kalam.jpg" alt="Slide 2" />
+
+                    <img class="object-cover object-center rounded" src="https://fossbytes.com/wp-content/uploads/2015/08/abdul-kalam-satellite-1200x900.jpg" alt="Slide 1" />
+                    <img class="object-cover object-center rounded" src="https://images.thequint.com/thequint/2019-11/dce0fe8c-47f8-4250-92f9-21f660364187/hero_image_1.jpg" alt="Slide 5" />
+                    <img class="object-cover object-center rounded" src="https://www.theeducationmagazine.com/wp-content/uploads/2020/03/7-5.jpg" alt="Slide 6" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="type_10">
+
+    <footer class="text-gray-700 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row
+				flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start
+					justify-center text-gray-900">
+                <span class="ml-3 text-xl">Mallikarjunaiah B M</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2
+					sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                <a href="https://github.com/ArjunBhogavimath" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@ArjunBhogavimath</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center
+					sm:justify-start">
+					<a href="https://www.facebook.com/arjun.bhogavimath" class="text-gray-500"
+						target="_blank">
+						<svg
+							fill="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							class="w-5 h-5"
+							viewBox="0 0 24 24">
+							<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+						</svg>
+					</a>
+
+					<a href="https://www.instagram.com/arjun__bhogavimath/" class="ml-3
+						text-gray-500" target="_blank">
+						<svg fill="none" stroke="currentColor" stroke-linecap="round"
+							stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24
+							24">
+							<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+							<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+						</svg>
+					</a>
+					<a href="https://www.linkedin.com/in/mallikarjunaiah-b-m-1331a319a/"
+						class="ml-3 text-gray-500" target="_blank">
+						<svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+							stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24
+							24">
+							<path
+								stroke="none"
+								d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0
+								016-6zM2 9h4v12H2z"></path>
+							<circle cx="4" cy="4" r="2" stroke="none"></circle>
+						</svg>
+					</a>
+				</span>
+        </div>
+    </footer>
+</body>
+
+</html>
